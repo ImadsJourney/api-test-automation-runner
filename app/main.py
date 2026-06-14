@@ -11,4 +11,4 @@ async def root():
 
 @app.get("/run/health")
 async def run_health_check():
-    return health_check()
+    return await health_check()
