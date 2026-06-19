@@ -12,10 +12,10 @@ The goal of this project is to build a lightweight API test runner that can send
 * FastAPI
 * Uvicorn
 * HTTPX
+* pytest
 
 Planned:
 
-* pytest integration
 * more API test cases
 * Docker support
 * Docker Compose setup
@@ -54,7 +54,7 @@ Install dependencies:
 Start the FastAPI server:
 
 ```bash
-uvicorn app.main:app --reload
+.venv/bin/uvicorn app.main:app --reload
 ```
 
 Open:
@@ -69,9 +69,9 @@ API documentation:
 http://localhost:8000/docs
 ```
 
+## Run Tests
 
 ```bash
 .venv/bin/python -m pytest
 ```
-
 
