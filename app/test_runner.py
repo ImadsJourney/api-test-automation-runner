@@ -1,4 +1,4 @@
-from api_client import get_health
+from app.api_client import get_health
 
 
 async def health_check():

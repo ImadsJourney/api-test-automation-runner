@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from test_runner import health_check
+from app.test_runner import health_check
 
 app = FastAPI()
 

@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+httpx
+pytest
+# Install with this command: .venv/bin/pip install -r requirements.txt
