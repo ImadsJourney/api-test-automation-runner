@@ -48,7 +48,7 @@ source .venv/bin/activate.fish
 Install dependencies:
 
 ```bash
-pip install fastapi uvicorn httpx
+.venv/bin/pip install -r requirements.txt
 ```
 
 Start the FastAPI server:
@@ -68,4 +68,10 @@ API documentation:
 ```text
 http://localhost:8000/docs
 ```
+
+
+```bash
+.venv/bin/python -m pytest
+```
+
 

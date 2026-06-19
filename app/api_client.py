@@ -1,9 +1,8 @@
 import httpx
-
-BASE_URL = "http://localhost:8080"
+from app.config import HEALTH_ENDPOINT
 
 
 async def get_health():
     async with httpx.AsyncClient() as client:
-        response = await client.get(BASE_URL + "/health")
+        response = await client.get(HEALTH_ENDPOINT, timeout=5.0)
         return response
